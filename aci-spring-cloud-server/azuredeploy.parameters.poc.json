@@ -1,0 +1,65 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "containerName": {
+            "value": "spring-cloud-config"
+        },
+        "location": {
+            "value": "uksouth"
+        },
+        "imageType": {
+            "value": "Public"
+        },
+        "imageName": {
+            "value": "hyness/spring-cloud-config-server"
+        },
+        "osType": {
+            "value": "Linux"
+        },
+        "numberCpuCores": {
+            "value": "1"
+        },
+        "memory": {
+            "value": "1.5"
+        },
+        "restartPolicy": {
+            "value": "OnFailure"
+        },
+        "springProfileActive": {
+            "value": "security"
+        },
+        "springSecurityUserName": {
+            "value": "cloudconfig"
+        },
+        "springSecurityPassword": {
+            "value": null
+        },
+        "configServerGitUrl": {
+            "value": "ssh://git@bitbucket.org:nationaltrust/{application}-config.git"
+        },
+        "ignoreLocalSshSetting": {
+            "value": "true"
+        },
+        "hostKeyChecking": {
+            "value": "false"
+        },
+        "gitPrivateKey": {
+            "value": "MIIEogIBAAKCAQEA3UgJlM1QbqfpFi76qpv6OLS2fZtmymCdGz3ChOAcoqbgp7Pes7MwLjcx75UlYkMlgCEVMxySOMoFPg1j7h4pj8beZs0OtFKReYyzuPfzStNa+GwxW9MdsF0v59m841Re5mPttvIi4PKQWLH2WG1EVSqCiLGwPG7/2FZrTvwBllsMbinRvP8zXAGStq+MzDlsT0bYN9jVY181EsUbR8fzM/sz1sqNIKlsyKYSKNFAklN9AsGqVhDOCcOZibCwXwWa1Qpd9AbF2Z1O/2zqrz8mbDjkwwkEQRa8Vsi4TzQlNaRf0KObZSTTmL9eAbfawLdHU4d9DICc6TKqwhE5BobqIwIDAQABAoIBAFLqRFTSnhnopwld7yVwrtECvgLQ8TJSA2yKttGtXG2CFFoipwc01I/stLRucYShXnLlcpklUpEe+dnnkJNQEAjE3t8sZR8idUpTc6CSoEJgcgz2FYSv1ccZE/NPfly8Z5byyMctce5SVc42WPWHc/xpomHwGvZ6LTn2H92Hxlx87Qkzt0OZH+a+Ia+qZjzf6EJG8//LcIFCURroneiqXj9V/EdxhTPqHyqwiVGtbi7ixPkbPYNIwt+Slf+nVCZJp2xscBD4TA2UGIBLwl5a0iOXxDZULEediFceArmpz3ntpMEg2UrD7hjEun5rtszTTay9/XVP0fzLM6zIy9ZpwzkCgYEA8LwX+H3FCRC2cDnKraNJTuj6+j7DLKHWrGH3KjIQWmzwEf3QZb0TYrdgXepI8in9wG3yZ00eL4b7EpqKx0nvrA8VpLIwjnHQYP6u5ywk234giv8g4NMAYb2yZMeNrF/n2G6t9WpSr6CnppAMa5uTGJDuPNP5DHrB08xd1enPmoUCgYEA61AnIYyzIOcfOKcnrKOKqPbCj2TfJ9YnweYxP+SPy8yY8Zuei4jp5R0g15ef8MpL6wOp91Xmc67AAQ6t8d0uDvwf0Hqt1K9CrRgvStOUYcbY1bbZ3FCTri/l57MtqI012uhup3l6na5RlN0YJBItfJniFhoOH5kjc7oZADtBFocCgYBgFOKIVkJG/Pmjzx0asno22XwaVuR1Mt7IjI0mtTabsLEcrS34/T74fnIi6bhVlvblT7yZCEmM9JXO9gl/wv26sYaU5l3E7J4bqGrMb20CgdOhRnSr5utXF2xVFuRvsROK6ZnawqXf3QIs039xj3VlL6s2cfAL0A7+ZqnpD9nBNQKBgGTcn1k/EMzKpFRJObVDCD0yP+TszMYrgjEXdQa49nXZhbkSBhwzHGZLXPdsE29HltDuah0NIdF2FvCdFSv1rTdZFF3tJ7NhSAgftK2zEQf0Dp9UV/+aPiLMfxQYdjqoBGyHcl6wsEEEJg3T0vQrInolD4Z/towOvOZu3yZ9P4HjAoGAaHFiA9BWFR+sgg+fQm+ocW0kaWDiRLdvJPO2WAAzNOS7ghunZ7j8a5+7YBxxdXI8wMIfSfMzsnruPZruw09njGC4JDe66zAlNJwFM20zVkMPBH5zxAIcCG+n4+EgJ6/jznJQrlv9f8TRDHkBF9+0qVvzuJXIsA5H8ZdEIJyeMpQ="
+        },
+        "ipAddressType": {
+            "value": "Public"
+        },
+        "ports": {
+            "value": [
+                {
+                    "port": "8888",
+                    "protocol": "TCP"
+                }
+            ]
+        },
+        "dnsNameLabel": {
+            "value": "tribelo"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+az deployment group create --resource-group tribelo-nationaltrust-poc-rg --template-file 
+
+az deployment group create \
+  --name ExampleDeployment \
+  --resource-group tribelo-nationaltrust-poc-rg \
+  --template-file azuredeploy.json \
+  --parameters @azuredeploy.parameters.json

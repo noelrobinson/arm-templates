@@ -1,0 +1,13 @@
+az container create --resource-group tribelo-nationaltrust-poc-rg --name mycontainer --image mcr.microsoft.com/azuredocs/aci-helloworld --dns-name-label aci-demo --ports 80
+
+
+templateFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.json"
+pocParameterFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.parameters.poc.json"
+springSecurityPassword="Organ\!Wine#1"
+
+az deployment group create \
+  --name SpringCloudConfigServerDeployment \
+  --resource-group tribelo-nationaltrust-poc-rg \
+  --template-file $templateFile \
+  --parameters @$pocParameterFile \
+  --parameters springSecurityPassword=$springSecurityPassword
