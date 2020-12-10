@@ -3,11 +3,15 @@ az container create --resource-group tribelo-nationaltrust-poc-rg --name myconta
 
 templateFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.json"
 pocParameterFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.parameters.poc.json"
-springSecurityPassword="Organ\!Wine#1"
+
+# add to azure key vault - https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli
+springSecurityPassword=
+gitPrivateKey=
 
 az deployment group create \
   --name SpringCloudConfigServerDeployment \
   --resource-group tribelo-nationaltrust-poc-rg \
   --template-file $templateFile \
   --parameters @$pocParameterFile \
-  --parameters springSecurityPassword=$springSecurityPassword
+  --parameters springSecurityPassword=$springSecurityPassword \
+  --parameters gitPrivateKey=$gitPrivateKey

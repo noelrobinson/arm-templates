@@ -58,7 +58,7 @@
             "type": "string"
         },
         "gitPrivateKey": {
-            "type": "string"
+            "type": "secureString"
         },
         "ipAddressType": {
             "type": "string"
@@ -115,7 +115,7 @@
                                 },
                                 {
                                     "name": "SPRING_CLOUD_CONFIG_SERVER_GIT_PRIVATEKEY",
-                                    "value": "[parameters('gitPrivateKey')]"
+                                    "secureValue": "[parameters('gitPrivateKey')]"
                                 }
 
                             ],
