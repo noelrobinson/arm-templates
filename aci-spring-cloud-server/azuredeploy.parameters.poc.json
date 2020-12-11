@@ -33,10 +33,15 @@
             "value": "cloudconfig"
         },
         "springSecurityPassword": {
-            "value": null
+            "reference": {
+              "keyVault": {
+              "id": "/subscriptions/99bb5c43-e99b-4496-b1c6-d337b8c84518/resourceGroups/tribelo-nationaltrust-poc-rg/providers/Microsoft.KeyVault/vaults/tribelo-nt-vault"
+              },
+              "secretName": "springSecurityPassword"
+            }
         },
         "configServerGitUrl": {
-            "value": "ssh://git@bitbucket.org:nationaltrust/{application}-config.git"
+            "value": "git@bitbucket.org:nationaltrust/{application}-config.git"
         },
         "ignoreLocalSshSetting": {
             "value": "true"
@@ -45,7 +50,12 @@
             "value": "false"
         },
         "gitPrivateKey": {
-            "value": null
+            "reference": {
+              "keyVault": {
+              "id": "/subscriptions/99bb5c43-e99b-4496-b1c6-d337b8c84518/resourceGroups/tribelo-nationaltrust-poc-rg/providers/Microsoft.KeyVault/vaults/tribelo-nt-vault"
+              },
+              "secretName": "gitPrivateKey"
+            }
         },
         "ipAddressType": {
             "value": "Public"

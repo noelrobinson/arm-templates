@@ -1,0 +1,6 @@
+az role definition create --role-definition "/Users/noel.robinson/Development/devops/azure/arm-templates/key-vault/role-definition.json"
+
+az role assignment create \
+  --role "Key Vault resource manager template deployment operator" \
+  --assignee noelarobinson_gmail.com#EXT#@noelarobinsongmail.onmicrosoft.com \
+  --resource-group tribelo-nationaltrust-poc-rg
