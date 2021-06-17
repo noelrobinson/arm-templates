@@ -12,7 +12,7 @@
             "value": "Public"
         },
         "imageName": {
-            "value": "hyness/spring-cloud-config-server"
+            "value": "hyness/spring-cloud-config-server:2.2.5.RELEASE"
         },
         "osType": {
             "value": "Linux"
@@ -21,7 +21,7 @@
             "value": "1"
         },
         "memory": {
-            "value": "1.5"
+            "value": "1"
         },
         "restartPolicy": {
             "value": "OnFailure"
