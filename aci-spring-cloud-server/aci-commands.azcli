@@ -3,8 +3,8 @@ az container create --resource-group tribelo-nationaltrust-poc-rg --name myconta
 
 az keyvault secret set --name gitPrivateKey --vault-name tribelo-nt-vault --file ~/.ssh/cloudconfig_rsa
 
-templateFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.json"
-pocParameterFile="~/Development/devops/azure/arm-templates/aci-spring-cloud-server/azuredeploy.parameters.poc.json"
+templateFile="~/Development/workspace/arm-templates/aci-spring-cloud-server/azuredeploy.json"
+pocParameterFile="~/Development/workspace/arm-templates/aci-spring-cloud-server/azuredeploy.parameters.poc.json"
 
 # add to azure key vault - https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli
 
